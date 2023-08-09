@@ -1,13 +1,9 @@
-hi
 local ElementFunction = {}
 local function CreateElement(ElementName, ElementFunction)
 	OrionLib.Elements[ElementName] = function(...)
 		return ElementFunction(...)
 	end
 end
-
-
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -35,10 +31,7 @@ local OrionLib = {
 	SaveCfg = false
 }
 
-
-
 local Kavo = {}
-
 local tween = game:GetService("TweenService")
 local tweeninfo = TweenInfo.new
 local input = game:GetService("UserInputService")
