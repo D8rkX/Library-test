@@ -998,18 +998,8 @@ function Kavo.CreateLib(kavName, themeList)
                     end
                 end)()
             end 
-
-                function Elements:NewToggle(tname, nTip, callback)
+                function ElementFunction:AddToggle(ToggleConfig)
                     
-
-
-
-
-
-
-
-
-
 ToggleConfig = ToggleConfig or {}
 				ToggleConfig.Name = ToggleConfig.Name or "Toggle"
 				ToggleConfig.Default = ToggleConfig.Default or false
